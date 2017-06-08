@@ -45,8 +45,13 @@
     Result:     3         ( = 30 / 2 / 5 )
     </pre>
       
+    <!-- JavaScript - better to put code in external JS file -->    
+    <script>
 
-    <script src="js-calculate.js">
+        
+        // Write your JS code here
+
+        
     </script>  
 </body>
 </html>
