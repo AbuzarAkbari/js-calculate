@@ -1,57 +1,26 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="utf-8">
-    <title>Calculate</title>
-  <link rel="stylesheet" type="text/css" href="js-calculate.css">
-</head>
-<body>
-    <h1>Calculate</h1>           
+//function Optellen(){
+//    document.getElementById("add").innerHTML = var cijfers=[];
+//    var text = "";
+//    var i;
+//    for (i = 0; i < cijfers.length; i++) {
+//        text += cijfers[i] + "<br>";
+//    }
+//    document.getElementById("result").innerHTML = text;
+//}
 
-    <form>
-        <p>
-          <label for="numbers">Numbers:</label>
-          <input type="text" id="numbers" name="numbers">
-        </p>
-        <p>
-          <label for="operation">Operation:</label>
-          <select id="operation">
-            <option value="sum">+</option>
-            <option value="substract">-</option>
-            <option value="multiply">*</option>
-            <option value="divide">/</option>
-          </select>
-        </p>
-        <button type="button" id="calculate">Calculate</button>
-        <p class="result">Result: <strong id="result">-</strong></p>
-    </form>
+//    cijfers.push(document.getElementById("numbers").innerHTML);
+//    var symbol = document.getElementById("operation").innerHTML;
 
-    <h2>Test Examples</h2>           
-    <pre>
-    Numbers:    30, 2, 5
-    Operation:  +
-    Result:     37        ( = 30 + 2 + 5 )
+
+function Optellen() {
+    var cijfers = document.getElementById("numbers").value;
+    var apart = cijfers.split(",");
+    parseInt(apart);
     
-    Numbers:    30, 2, 5
-    Operation:  -
-    Result:     23        ( = 30 - 2 - 5 )
-    
-    Numbers:    30, 2, 5
-    Operation:  *
-    Result:     300       ( = 30 * 2 * 5 )
-    
-    Numbers:    30, 2, 5
-    Operation:  /
-    Result:     3         ( = 30 / 2 / 5 )
-    </pre>
-      
-    <!-- JavaScript - better to put code in external JS file -->    
-    <script>
+    var begin = 0;
+    for (i = 0; i < apart.length; i++) {
+      begin+=parseFloat(apart[i]);
+    }
 
-        
-        // Write your JS code here
-
-        
-    </script>  
-</body>
-</html>
+    document.getElementById("result").innerHTML = begin;
+}
