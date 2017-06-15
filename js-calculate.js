@@ -9,33 +9,31 @@ function bereken() {
         min+=parseFloat(apart[i]);
     }
 
-    var plus = 0;
-
-    var keer = 1;
+   var output = parseInt(apart[0]) 
     
     
     
     
     if (operation == "sum") {
-        for (i = 0; i < apart.length; i++) {
-            plus+=parseFloat(apart[i]);
+        for (i = 1; i < apart.length; i++) {
+            output+=parseFloat(apart[i]);
         }
-        document.getElementById("result").innerHTML = plus;
+        document.getElementById("result").innerHTML = output;
     } else if (operation == "substract") {
-        for (i = 0; i < apart.length; i++) {
-            min-=parseFloat(apart[i]);
+        for (i = 1; i < apart.length; i++) {
+            output-=parseFloat(apart[i]);
         }
-        document.getElementById("result").innerHTML = min;
+        document.getElementById("result").innerHTML = output;
     } else if (operation == "multiply") {
-        for (i = 0; i < apart.length; i++) {
-            keer*=parseFloat(apart[i]);
+        for (i = 1; i < apart.length; i++) {
+            output*=parseFloat(apart[i]);
         }
-        document.getElementById("result").innerHTML = keer;
+        document.getElementById("result").innerHTML = output;
     } else if (operation == "divide") {
-        for (i = 0; i < apart.length; i++) {
-            begin/=parseFloat(apart[i]);
+        for (i = 1; i < apart.length; i++) {
+            output/=parseFloat(apart[i]);
         }
-        	document.getElementById("result").innerHTML = begin;
+        	document.getElementById("result").innerHTML = output;
     }
     console.log(begin);
 
